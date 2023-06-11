@@ -1,0 +1,32 @@
+<html><head>
+  <link rel="stylesheet" href="./counter.css">
+  <meta name="viewport" content="width=device-width, initial-scal=1.0">
+</head>
+  <body>
+    <div id="count">
+      0
+    </div>
+    
+    <button id="decrease">
+      sub -1
+    </button>
+
+    <button id="increase">
+      add +1
+    </button>
+    <script>
+      let main=document.getElementById("count")
+      let btn1 = document.getElementById("increase")
+      let count = 0;
+      let btn=document.getElementById("decrease")
+      btn.addEventListener("click", function(){
+        count--;
+        main.innerHTML=count;
+      })
+      btn1.addEventListener("click", function() {
+        count++;
+        main.innerHTML = count;
+      })
+    </script>
+  </body>
+</html>
